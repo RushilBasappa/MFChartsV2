@@ -1,4 +1,4 @@
-export const Input = ({ placeholder, classes = [] }) => {
+export const Input = ({ placeholder, setValue, type }) => {
   const inputClassNames = [
     "bg-gray-200",
     "appearance-none",
@@ -16,7 +16,7 @@ export const Input = ({ placeholder, classes = [] }) => {
     "mb-6",
     ...classes
   ].join(" ")
-  return (
-    <input className={inputClassNames} type="text" placeholder={placeholder} />
+  return(
+    <input className={inputClassNames} type={type} placeholder={placeholder} onChange={(event) => setValue(event.target.value)} />
   )
 }
