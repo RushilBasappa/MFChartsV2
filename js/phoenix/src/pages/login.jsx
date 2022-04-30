@@ -3,6 +3,7 @@ import { BareIcon } from "../../src/components"
 import { BsLinkedin, BsGoogle, BsGithub } from "react-icons/bs";
 
 const Login = () => {
+
   return (
     <div className="flex flex-row">
       <div className="md:w-2/3 flex flex-col justify-center items-center">

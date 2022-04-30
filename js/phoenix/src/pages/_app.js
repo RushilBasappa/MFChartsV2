@@ -1,9 +1,9 @@
 import "../styles/globals.css";
-import { AuthContextProvider } from "../context/AuthContext";
+import { AuthContextProvider } from "../components";
 import { useRouter } from "next/router";
-import ProtectedRoute from "../components/ProtectedRoutes";
+import { ProtectedRoute } from "../components";
 
-const noAuthRequired = ["/", "/login", "/signup"];
+const noAuthRequired = ["/login", "/signup"];
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
