@@ -1,6 +1,7 @@
 import { SignupForm } from "../containers";
 import { BareIcon } from "../../src/components"
 import { BsLinkedin, BsGoogle, BsGithub } from "react-icons/bs";
+import Separater from "../containers/Separater/Separater";
 
 const Signup = () => {
     return (
@@ -8,11 +9,7 @@ const Signup = () => {
             <div className="basis-1 md:basis-2/3  flex flex-col justify-center items-center">
                 <h1 className="font-bold text-3xl">Add Details to Signup</h1>
                 <SignupForm />
-                <div className="flex items-center">
-                    <div className="border-t-2 border-gray-400  w-40"></div>
-                    <div className="m-4">OR</div>
-                    <div className="border-t-2 border-gray-400  w-40"></div>
-                </div>
+                <Separater />
                 <div className="font-bold text-xs">Signup with</div>
                 <div className="flex flex-row">
                     <BareIcon IconComponent={<BsGoogle />} classes={["text-red-500"]} />
