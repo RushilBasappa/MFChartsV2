@@ -1,4 +1,4 @@
-export const Input = ({ placeholder }) => {
+export const Input = ({ placeholder, classes = [] }) => {
   const inputClassNames = [
     "bg-gray-200",
     "appearance-none",
@@ -13,9 +13,10 @@ export const Input = ({ placeholder }) => {
     "focus:outline-none",
     "focus:bg-white",
     "focus:border-bgColor",
-    "mb-6"
+    "mb-6",
+    ...classes
   ].join(" ")
-  return(
+  return (
     <input className={inputClassNames} type="text" placeholder={placeholder} />
   )
 }

@@ -1,23 +1,21 @@
 import { LoginForm } from "../../src/containers"
 import { BareIcon } from "../../src/components"
 import { BsLinkedin, BsGoogle, BsGithub } from "react-icons/bs";
+import Separater from "../containers/Separater/Separater";
+
 
 const Login = () => {
   return (
     <div className="flex flex-row">
       <div className="md:w-2/3 flex flex-col justify-center items-center">
         <h1 className="font-bold text-3xl">Login to Your Account</h1>
-        <LoginForm/>
-        <div className="flex items-center">
-          <div className="border-t-2 border-gray-400  w-40"></div>
-          <div className="m-4">OR</div>
-          <div className="border-t-2 border-gray-400  w-40"></div>
-        </div>
+        <LoginForm />
+        <Separater />
         <div className="font-bold text-xs">Login with</div>
         <div className="flex flex-row">
-          <BareIcon IconComponent={<BsGoogle />} classes={["text-red-500"]} />
-          <BareIcon IconComponent={<BsGithub />}/>
-          <BareIcon IconComponent={<BsLinkedin />}/>
+          <BareIcon IconComponent={<BsGoogle />} />
+          <BareIcon IconComponent={<BsGithub />} />
+          <BareIcon IconComponent={<BsLinkedin />} />
         </div>
       </div>
       <div className="md:w-1/3 md:bg-bgColor hidden md:flex md:flex-col md:justify-center md:items-center">
