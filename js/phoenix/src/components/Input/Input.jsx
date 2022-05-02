@@ -1,4 +1,4 @@
-export const Input = ({ placeholder, setValue, type }) => {
+export const Input = ({ placeholder, setValue, type, classes = [] }) => {
   const inputClassNames = [
     "bg-gray-200",
     "appearance-none",
