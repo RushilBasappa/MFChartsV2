@@ -3,10 +3,11 @@ import {
   onAuthStateChanged,
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
+  signInWithPopup,
   signOut,
 } from 'firebase/auth'
-import { auth } from '../config/firebase'
-import {Loading} from '../components'
+import { auth, provider } from '../config/firebase'
+import { Loading } from '../components'
 
 const AuthContext = createContext({})
 
@@ -43,14 +44,17 @@ export const AuthContextProvider = ({
     return signInWithEmailAndPassword(auth, email, password)
   }
 
+  const signInWithGoogle = () => signInWithPopup(auth, provider);
+
+
   const logout = async () => {
     setUser(null)
     await signOut(auth)
   }
 
   return (
-    <AuthContext.Provider value={{ user, login, signup, logout }}>
-      {loading ? (<Loading/>) : children}
+    <AuthContext.Provider value={{ user, login, signup, logout, signInWithGoogle }}>
+      {loading ? (<Loading />) : children}
     </AuthContext.Provider>
   )
 }
