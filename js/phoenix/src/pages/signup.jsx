@@ -1,7 +1,7 @@
 import { SignupForm } from "../containers";
 import { BareIcon } from "../../src/components"
 import { BsLinkedin, BsGoogle, BsGithub } from "react-icons/bs";
-import Separater from "../containers/Separater/Separater";
+import Separator from "../components/Separator/Separator";
 
 const Signup = () => {
     return (
@@ -9,7 +9,7 @@ const Signup = () => {
             <div className="basis-1 md:basis-2/3  flex flex-col justify-center items-center">
                 <h1 className="font-bold text-3xl">Add Details to Signup</h1>
                 <SignupForm />
-                <Separater />
+                <Separator />
                 <div className="font-bold text-xs">Signup with</div>
                 <div className="flex flex-row">
                     <BareIcon IconComponent={<BsGoogle />} classes={["text-red-500"]} />

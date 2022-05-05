@@ -1,4 +1,4 @@
-export const Separater = () => {
+export const Separator = () => {
     return (
         <div className="flex items-center">
             <div className="border-t-2 border-gray-400  w-40"></div>
@@ -6,4 +6,4 @@ export const Separater = () => {
             <div className="border-t-2 border-gray-400  w-40"></div>
         </div>
     );
-}
+}   

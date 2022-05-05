@@ -1,5 +1,5 @@
-import { LoginForm, Separater } from "../../src/containers"
-import { BareIcon } from "../../src/components"
+import { LoginForm } from "../../src/containers"
+import { BareIcon, Separator } from "../../src/components"
 import { BsLinkedin, BsGoogle, BsGithub } from "react-icons/bs";
 import { useAuth } from "../context/AuthContext";
 import { useRouter } from 'next/router'
@@ -19,7 +19,7 @@ const Login = () => {
       <div className="md:w-2/3 flex flex-col justify-center items-center">
         <h1 className="font-bold text-3xl">Login to Your Account</h1>
         <LoginForm />
-        <Separater />
+        <Separator />
         <div className="font-bold text-xs">Login with</div>
         <div className="flex flex-row">
           <div onClick={handleSigninWithGoogle}>
