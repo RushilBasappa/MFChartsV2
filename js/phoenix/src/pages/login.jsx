@@ -1,19 +1,30 @@
 import { LoginForm } from "../../src/containers"
-import { BareIcon } from "../../src/components"
+import { BareIcon, Separator } from "../../src/components"
 import { BsLinkedin, BsGoogle, BsGithub } from "react-icons/bs";
-import Separater from "../containers/Separater/Separater";
+import { useAuth } from "../context/AuthContext";
+import { useRouter } from 'next/router'
 
 
 const Login = () => {
+  const router = useRouter()
+  const { signInWithGoogle } = useAuth()
+  const handleSigninWithGoogle = () => {
+    signInWithGoogle().then(() => {
+      router.push("/")
+    })
+
+  }
   return (
     <div className="flex flex-row">
       <div className="md:w-2/3 flex flex-col justify-center items-center">
         <h1 className="font-bold text-3xl">Login to Your Account</h1>
         <LoginForm />
-        <Separater />
+        <Separator />
         <div className="font-bold text-xs">Login with</div>
         <div className="flex flex-row">
-          <BareIcon IconComponent={<BsGoogle />} />
+          <div onClick={handleSigninWithGoogle}>
+            <BareIcon IconComponent={<BsGoogle />} classes={["cursor-pointer"]} />
+          </div>
           <BareIcon IconComponent={<BsGithub />} />
           <BareIcon IconComponent={<BsLinkedin />} />
         </div>
