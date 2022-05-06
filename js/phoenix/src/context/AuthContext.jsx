@@ -5,9 +5,11 @@ import {
   signInWithEmailAndPassword,
   signInWithPopup,
   signOut,
+  updatePassword
 } from 'firebase/auth'
-import { auth, provider } from '../config/firebase'
+import { auth, googleProvider, facebookProvider } from '../config/firebase'
 import { Loading } from '../components'
+
 
 const AuthContext = createContext({})
 
@@ -22,11 +24,7 @@ export const AuthContextProvider = ({
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       if (user) {
-        setUser({
-          uid: user.uid,
-          email: user.email,
-          displayName: user.displayName,
-        })
+        setUser(user)
       } else {
         setUser(null)
       }
@@ -35,7 +33,7 @@ export const AuthContextProvider = ({
 
     return () => unsubscribe()
   }, [])
-
+  console.log(user)
   const signup = (email, password) => {
     return createUserWithEmailAndPassword(auth, email, password)
   }
@@ -44,7 +42,8 @@ export const AuthContextProvider = ({
     return signInWithEmailAndPassword(auth, email, password)
   }
 
-  const signInWithGoogle = () => signInWithPopup(auth, provider);
+  const signInWithGoogle = () => signInWithPopup(auth, googleProvider);
+  const signInWithFacebook = () => signInWithPopup(auth, facebookProvider);
 
 
   const logout = async () => {
@@ -52,8 +51,12 @@ export const AuthContextProvider = ({
     await signOut(auth)
   }
 
+  const changePassword = (newPassword) => {
+    return updatePassword(user, newPassword)
+  }
+
   return (
-    <AuthContext.Provider value={{ user, login, signup, logout, signInWithGoogle }}>
+    <AuthContext.Provider value={{ user, login, signup, logout, signInWithGoogle, signInWithFacebook, changePassword }}>
       {loading ? (<Loading />) : children}
     </AuthContext.Provider>
   )

@@ -4,3 +4,6 @@ export { BareIcon } from "./Icon/Icon";
 export { ProtectedRoute } from "./ProtectedRoute/ProtectedRoutes";
 export { Loading } from "./Loading/Loading";
 export { Separator } from "./Separator/Separator";
+export { Card } from "./Card/Card";
+export { Label } from "./Label/Label";
+export { Table } from "./Table/Table"
