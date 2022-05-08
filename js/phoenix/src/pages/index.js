@@ -1,41 +1,11 @@
-import { useAuth } from "../../src/context/AuthContext"
-import { Input, Card, Button, Table, Label } from "../components"
-import { useState } from 'react'
+import { Card, Table, Label } from "../components"
+import { Navbar } from "../containers"
 
 const Home = () => {
-  const { logout, changePassword } = useAuth()
-  const [password, setPassword] = useState("")
-  const [newPassword, setNewPassword] = useState("")
-
-  const handleLogout = (e) => {
-    e.preventDefault()
-
-    logout().then(authUser => {
-    }).catch(error => {
-      console.log(error.message)
-      alert("Logout Not successfull")
-    });
-  }
-
-  const handleChangePassword = (e) => {
-    e.preventDefault()
-
-    changePassword(newPassword).then(authUser => {
-    }).catch(error => {
-      console.log(error.message)
-      // alert("Password Not Updated")
-    });
-  }
 
   return (
-    // <div className="flex justify-center items-center text-2xl">
-    //   <Button text="Logout" handleClick={handleLogout} />
-    //   <Input placeholder="password" setValue={setPassword} type="password" />
-    //   <Input placeholder="New Password" setValue={setNewPassword} type="password" />
-    //   <Button text="Change Password" handleClick={handleChangePassword} />
-    // </div>
-
     <div className="flex flex-col">
+      <Navbar />
       <div className="flex justify-center items-center basis-1/3">
         <div className="basis-1/3 p-10">
           <Card >
@@ -50,7 +20,6 @@ const Home = () => {
               </div>
             </div>
           </Card>
-
         </div>
         <div className="basis-2/3 p-10">
           <Card >
@@ -79,7 +48,6 @@ const Home = () => {
       </div>
       <div className="flex p-10 flex-col">
         <Table />
-        <Button text="Logout" handleClick={handleLogout} />
       </div>
     </div>
   )
