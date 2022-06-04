@@ -1,15 +1,21 @@
 import { LoginForm } from "../../src/containers"
 import { BareIcon, Separator } from "../../src/components"
-import { BsLinkedin, BsGoogle, BsGithub } from "react-icons/bs";
+import { BsLinkedin, BsGoogle, BsFacebook } from "react-icons/bs";
 import { useAuth } from "../context/AuthContext";
 import { useRouter } from 'next/router'
 
 
 const Login = () => {
   const router = useRouter()
-  const { signInWithGoogle } = useAuth()
+  const { signInWithGoogle, signInWithFacebook } = useAuth()
   const handleSigninWithGoogle = () => {
     signInWithGoogle().then(() => {
+      router.push("/")
+    })
+
+  }
+  const handleSigninWithFacebook = () => {
+    signInWithFacebook().then(() => {
       router.push("/")
     })
 
@@ -25,7 +31,9 @@ const Login = () => {
           <div onClick={handleSigninWithGoogle}>
             <BareIcon IconComponent={<BsGoogle />} classes={["cursor-pointer"]} />
           </div>
-          <BareIcon IconComponent={<BsGithub />} />
+          <div onClick={handleSigninWithFacebook}>
+            <BareIcon IconComponent={<BsFacebook />} classes={["cursor-pointer"]} />
+          </div>
           <BareIcon IconComponent={<BsLinkedin />} />
         </div>
       </div>
