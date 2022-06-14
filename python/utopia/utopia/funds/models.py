@@ -8,7 +8,7 @@ class Fund(models.Model):
 
 
 class Date(models.Model):
-    date = models.DateField
+    date = models.DateField(auto_now_add=True)
 
 
 class Nav(models.Model):
