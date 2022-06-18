@@ -1,0 +1,462 @@
+[
+{
+    "model": "funds.fund",
+    "pk": 1,
+    "fields": {
+        "name": "Century both true stuff sister."
+    }
+},
+{
+    "model": "funds.fund",
+    "pk": 2,
+    "fields": {
+        "name": "On wind affect least particularly late."
+    }
+},
+{
+    "model": "funds.fund",
+    "pk": 3,
+    "fields": {
+        "name": "Else street force."
+    }
+},
+{
+    "model": "funds.fund",
+    "pk": 4,
+    "fields": {
+        "name": "Research only suggest knowledge down him be."
+    }
+},
+{
+    "model": "funds.fund",
+    "pk": 5,
+    "fields": {
+        "name": "Speak help tend sense company."
+    }
+},
+{
+    "model": "funds.fund",
+    "pk": 6,
+    "fields": {
+        "name": "Then long prepare behind. Those support miss now."
+    }
+},
+{
+    "model": "funds.fund",
+    "pk": 7,
+    "fields": {
+        "name": "Speak you answer east toward pattern week."
+    }
+},
+{
+    "model": "funds.fund",
+    "pk": 8,
+    "fields": {
+        "name": "Pretty special fall woman that rock tend."
+    }
+},
+{
+    "model": "funds.fund",
+    "pk": 9,
+    "fields": {
+        "name": "Course price foreign join rest."
+    }
+},
+{
+    "model": "funds.fund",
+    "pk": 10,
+    "fields": {
+        "name": "Window before attack TV discuss join defense."
+    }
+},
+{
+    "model": "funds.fund",
+    "pk": 11,
+    "fields": {
+        "name": "Player window hit article player national."
+    }
+},
+{
+    "model": "funds.fund",
+    "pk": 12,
+    "fields": {
+        "name": "At project table worry city few."
+    }
+},
+{
+    "model": "funds.fund",
+    "pk": 13,
+    "fields": {
+        "name": "Early day billion five cell."
+    }
+},
+{
+    "model": "funds.fund",
+    "pk": 14,
+    "fields": {
+        "name": "Paper fact table against them."
+    }
+},
+{
+    "model": "funds.fund",
+    "pk": 15,
+    "fields": {
+        "name": "Network table officer or cultural."
+    }
+},
+{
+    "model": "funds.fund",
+    "pk": 16,
+    "fields": {
+        "name": "Model light everybody spend."
+    }
+},
+{
+    "model": "funds.fund",
+    "pk": 17,
+    "fields": {
+        "name": "Action history fish."
+    }
+},
+{
+    "model": "funds.fund",
+    "pk": 18,
+    "fields": {
+        "name": "However newspaper minute hot easy dream describe."
+    }
+},
+{
+    "model": "funds.fund",
+    "pk": 19,
+    "fields": {
+        "name": "Thing bring page pass task."
+    }
+},
+{
+    "model": "funds.fund",
+    "pk": 20,
+    "fields": {
+        "name": "Close long five win break."
+    }
+},
+{
+    "model": "funds.date",
+    "pk": 1,
+    "fields": {
+        "date": "1975-04-17"
+    }
+},
+{
+    "model": "funds.date",
+    "pk": 2,
+    "fields": {
+        "date": "2006-08-31"
+    }
+},
+{
+    "model": "funds.date",
+    "pk": 3,
+    "fields": {
+        "date": "1994-09-03"
+    }
+},
+{
+    "model": "funds.date",
+    "pk": 4,
+    "fields": {
+        "date": "1980-07-21"
+    }
+},
+{
+    "model": "funds.date",
+    "pk": 5,
+    "fields": {
+        "date": "1970-10-12"
+    }
+},
+{
+    "model": "funds.date",
+    "pk": 6,
+    "fields": {
+        "date": "2010-01-21"
+    }
+},
+{
+    "model": "funds.date",
+    "pk": 7,
+    "fields": {
+        "date": "1999-09-21"
+    }
+},
+{
+    "model": "funds.date",
+    "pk": 8,
+    "fields": {
+        "date": "1973-01-29"
+    }
+},
+{
+    "model": "funds.date",
+    "pk": 9,
+    "fields": {
+        "date": "2011-05-31"
+    }
+},
+{
+    "model": "funds.date",
+    "pk": 10,
+    "fields": {
+        "date": "2004-07-09"
+    }
+},
+{
+    "model": "funds.date",
+    "pk": 11,
+    "fields": {
+        "date": "1995-08-28"
+    }
+},
+{
+    "model": "funds.date",
+    "pk": 12,
+    "fields": {
+        "date": "1977-11-11"
+    }
+},
+{
+    "model": "funds.date",
+    "pk": 13,
+    "fields": {
+        "date": "1971-08-19"
+    }
+},
+{
+    "model": "funds.date",
+    "pk": 14,
+    "fields": {
+        "date": "1973-03-19"
+    }
+},
+{
+    "model": "funds.date",
+    "pk": 15,
+    "fields": {
+        "date": "1990-12-13"
+    }
+},
+{
+    "model": "funds.date",
+    "pk": 16,
+    "fields": {
+        "date": "2015-02-23"
+    }
+},
+{
+    "model": "funds.date",
+    "pk": 17,
+    "fields": {
+        "date": "1983-12-12"
+    }
+},
+{
+    "model": "funds.date",
+    "pk": 18,
+    "fields": {
+        "date": "1982-04-19"
+    }
+},
+{
+    "model": "funds.date",
+    "pk": 19,
+    "fields": {
+        "date": "1977-09-25"
+    }
+},
+{
+    "model": "funds.date",
+    "pk": 20,
+    "fields": {
+        "date": "1975-02-13"
+    }
+},
+{
+    "model": "funds.nav",
+    "pk": 1,
+    "fields": {
+        "fund_id": 3,
+        "date_id": 4,
+        "nav": "0.5477"
+    }
+},
+{
+    "model": "funds.nav",
+    "pk": 2,
+    "fields": {
+        "fund_id": 2,
+        "date_id": 3,
+        "nav": "0.0522"
+    }
+},
+{
+    "model": "funds.nav",
+    "pk": 3,
+    "fields": {
+        "fund_id": 4,
+        "date_id": 4,
+        "nav": "0.1853"
+    }
+},
+{
+    "model": "funds.nav",
+    "pk": 4,
+    "fields": {
+        "fund_id": 3,
+        "date_id": 4,
+        "nav": "0.6641"
+    }
+},
+{
+    "model": "funds.nav",
+    "pk": 5,
+    "fields": {
+        "fund_id": 1,
+        "date_id": 2,
+        "nav": "0.7984"
+    }
+},
+{
+    "model": "funds.nav",
+    "pk": 6,
+    "fields": {
+        "fund_id": 10,
+        "date_id": 16,
+        "nav": "0.5086"
+    }
+},
+{
+    "model": "funds.nav",
+    "pk": 7,
+    "fields": {
+        "fund_id": 13,
+        "date_id": 8,
+        "nav": "0.8386"
+    }
+},
+{
+    "model": "funds.nav",
+    "pk": 8,
+    "fields": {
+        "fund_id": 9,
+        "date_id": 9,
+        "nav": "0.6431"
+    }
+},
+{
+    "model": "funds.nav",
+    "pk": 9,
+    "fields": {
+        "fund_id": 19,
+        "date_id": 11,
+        "nav": "0.3973"
+    }
+},
+{
+    "model": "funds.nav",
+    "pk": 10,
+    "fields": {
+        "fund_id": 19,
+        "date_id": 6,
+        "nav": "0.0619"
+    }
+},
+{
+    "model": "funds.nav",
+    "pk": 11,
+    "fields": {
+        "fund_id": 20,
+        "date_id": 14,
+        "nav": "0.7158"
+    }
+},
+{
+    "model": "funds.nav",
+    "pk": 12,
+    "fields": {
+        "fund_id": 6,
+        "date_id": 19,
+        "nav": "0.2508"
+    }
+},
+{
+    "model": "funds.nav",
+    "pk": 13,
+    "fields": {
+        "fund_id": 9,
+        "date_id": 6,
+        "nav": "0.8676"
+    }
+},
+{
+    "model": "funds.nav",
+    "pk": 14,
+    "fields": {
+        "fund_id": 8,
+        "date_id": 8,
+        "nav": "0.4882"
+    }
+},
+{
+    "model": "funds.nav",
+    "pk": 15,
+    "fields": {
+        "fund_id": 6,
+        "date_id": 14,
+        "nav": "0.0920"
+    }
+},
+{
+    "model": "funds.nav",
+    "pk": 16,
+    "fields": {
+        "fund_id": 14,
+        "date_id": 19,
+        "nav": "0.3699"
+    }
+},
+{
+    "model": "funds.nav",
+    "pk": 17,
+    "fields": {
+        "fund_id": 15,
+        "date_id": 6,
+        "nav": "0.7930"
+    }
+},
+{
+    "model": "funds.nav",
+    "pk": 18,
+    "fields": {
+        "fund_id": 9,
+        "date_id": 14,
+        "nav": "0.0164"
+    }
+},
+{
+    "model": "funds.nav",
+    "pk": 19,
+    "fields": {
+        "fund_id": 7,
+        "date_id": 18,
+        "nav": "0.0325"
+    }
+},
+{
+    "model": "funds.nav",
+    "pk": 20,
+    "fields": {
+        "fund_id": 17,
+        "date_id": 20,
+        "nav": "0.9532"
+    }
+}
+]
