@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'funds',
     'portfolio',
     'django_seed',
+    'rest_framework'
 ]
 
 MIDDLEWARE = [
