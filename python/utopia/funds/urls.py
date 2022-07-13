@@ -3,5 +3,5 @@ from django.urls import path, re_path
 from . import views
 
 urlpatterns = [
-    re_path(r'^$', views.fund_list, name="list"),
+    re_path(r'^$', views.scheme_list, name="list"),
 ]

@@ -1,8 +1,8 @@
 from rest_framework import serializers
-from .models import Fund
+from .models import Scheme
 
 
 class FundSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Fund
+        model = Scheme
         fields = ['id', 'name']

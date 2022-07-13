@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Fund
+from .models import Scheme
 
 
-admin.site.register(Fund)
+admin.site.register(Scheme)
