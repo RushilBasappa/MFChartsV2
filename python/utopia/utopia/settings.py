@@ -83,7 +83,8 @@ DATABASES = {
         'NAME': 'utopia',
         'USER': 'utopia',
         'PASSWORD': 'unix11',
-        'HOST': 'localhost'
+        'HOST': 'db',
+        'PORT': '5432',
     }
 }
 
